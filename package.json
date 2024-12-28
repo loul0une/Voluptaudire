@@ -1,0 +1,36 @@
+{
+  "name": "voluptaudire",
+  "author": "Elouan Gachet",
+  "license": "UNLICENSED",
+  "description": "Voluptaudire - A Spotify stats tracking and visualization app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^4.5.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.52.0",
+    "husky": "^9.1.7",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.2.2",
+    "tailwindcss": "^3.4.15",
+    "webpack-notifier": "^1.15.0"
+  },
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.9"
+  }
+}
